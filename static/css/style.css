@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav,
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    height: 5rem;
+    overflow: auto;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item img{
+    padding: 1rem;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.homepage-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 8rem;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul,
+footer p {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: larger;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 3rem;
+}
+
+.section-body h1{
+    font-size: 3rem;
+}
+
+.homepage-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+
+.section-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+}

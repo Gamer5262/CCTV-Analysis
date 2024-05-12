@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EyesAbove</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+</head>
+
+<body>
+    <nav>
+        <img src="{{url_for('static',filename='images/logo-maybe.svg')}}" height="50px" width="50px">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="section-body">
+            <h1>EyesAbove</h1>
+            <h3>One Solution for complete monitoring of your outdoor workplace</h3>
+            <form action="{{ url_for('video') }}" method="post" id="xyz">
+			<input type="text" name="videolink" placeholder="Enter Video Link">
+            <button type="submit" form="xyz" value="videolink">Manage Crowd</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <div class="contact-items">
+                    <a href="facebook">
+                        <div class="contact-item">
+                            <img src="{{url_for('static',filename='images/fb.svg')}}" height="20px" width="20px">
+                            facebook_id
+                        </div>
+                    </a>
+                    <a href="instagram">
+                        <div class="contact-item">
+                            <img src="{{url_for('static',filename='images/insta.svg')}}" height="20px" width="20px">
+                            instagram_id
+                        </div>
+                    </a>
+                    <a href="twitter">
+                        <div class="contact-item">                            
+                            <img src="{{url_for('static',filename='images/twitter.svg')}}" height="20px" width="20px">
+                            twitter_id
+                        </div>
+                    </a>
+                    <a href="email">
+                        <div class="contact-item">
+                            <img src="{{url_for('static',filename='images/email.svg')}}" height="20px" width="20px">
+                            email_id
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- https://www.pexels.com/download/video/853889/ -->
